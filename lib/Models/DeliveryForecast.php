@@ -13,8 +13,6 @@ class DeliveryForecast extends ApiObject
     ];
 
     protected $classMap = [
-		'deliverable' => \Scayle\StorefrontApi\Models\Deliverable::class,
-		'subsequentDelivery' => \Scayle\StorefrontApi\Models\SubsequentDelivery::class,
     ];
 
     protected $collectionClassMap = [

@@ -3,7 +3,7 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property array[] $atrributes 
+ * @property array[] $attributes 
  */
 class NavigationItemExtraFilter extends ApiObject
 {

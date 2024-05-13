@@ -6,27 +6,6 @@ use Scayle\StorefrontApi\Models\Identifier;
 
 class BasketTest extends BaseApiTestCase
 {
-    public function testAddItem()
-    {
-        $expectedRequestJson = $this->loadFixture('BasketAddItemRequest.json');
-
-        $requestEntity = new \Scayle\StorefrontApi\Models\CreateBasketBody($expectedRequestJson);
-        $this->assertJsonStringEqualsJsonString(json_encode($expectedRequestJson), $requestEntity->toJson());
-
-        $responseEntity = $this->api->baskets->AddItem('1', $requestEntity,  []);
-
-        $expectedResponseJson = $this->loadFixture('BasketAddItemResponse.json');
-        $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Basket::class, $responseEntity);
-        $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
-
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'items', \Scayle\StorefrontApi\Models\BasketItem::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'cost', \Scayle\StorefrontApi\Models\Price::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'packages', \Scayle\StorefrontApi\Models\Package::class);
-
-
-
-    }
-
     public function testGet()
     {
         $responseEntity = $this->api->baskets->Get('1',  []);
@@ -35,9 +14,24 @@ class BasketTest extends BaseApiTestCase
         $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Basket::class, $responseEntity);
         $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
 
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'items', \Scayle\StorefrontApi\Models\BasketItem::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'cost', \Scayle\StorefrontApi\Models\Price::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'packages', \Scayle\StorefrontApi\Models\Package::class);
+
+
+
+    }
+
+    public function testAddItem()
+    {
+        $expectedRequestJson = $this->loadFixture('BasketAddItemRequest.json');
+
+        $requestEntity = new \Scayle\StorefrontApi\Models\CreateBasketItemBody($expectedRequestJson);
+        $this->assertJsonStringEqualsJsonString(json_encode($expectedRequestJson), $requestEntity->toJson());
+
+        $responseEntity = $this->api->baskets->AddItem('1', $requestEntity,  []);
+
+        $expectedResponseJson = $this->loadFixture('BasketAddItemResponse.json');
+        $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Basket::class, $responseEntity);
+        $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
+
 
 
 
@@ -51,9 +45,6 @@ class BasketTest extends BaseApiTestCase
         $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Basket::class, $responseEntity);
         $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
 
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'items', \Scayle\StorefrontApi\Models\BasketItem::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'cost', \Scayle\StorefrontApi\Models\Price::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'packages', \Scayle\StorefrontApi\Models\Package::class);
 
 
 
@@ -63,7 +54,7 @@ class BasketTest extends BaseApiTestCase
     {
         $expectedRequestJson = $this->loadFixture('BasketUpdateRequest.json');
 
-        $requestEntity = new \Scayle\StorefrontApi\Models\CreateBasketBody($expectedRequestJson);
+        $requestEntity = new \Scayle\StorefrontApi\Models\UpdateBasketItemBody($expectedRequestJson);
         $this->assertJsonStringEqualsJsonString(json_encode($expectedRequestJson), $requestEntity->toJson());
 
         $responseEntity = $this->api->baskets->Update('1', '1', $requestEntity,  []);
@@ -72,9 +63,6 @@ class BasketTest extends BaseApiTestCase
         $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Basket::class, $responseEntity);
         $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
 
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'items', \Scayle\StorefrontApi\Models\BasketItem::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'cost', \Scayle\StorefrontApi\Models\Price::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'packages', \Scayle\StorefrontApi\Models\Package::class);
 
 
 

@@ -3,7 +3,7 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property Pagination $pagination 
+ * @property Pagination|OffsetPagination $pagination 
  * @property Campaign[] $entities 
  */
 class CampaignsResponse extends ApiObject

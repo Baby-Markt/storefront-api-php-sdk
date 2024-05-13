@@ -6,7 +6,7 @@ namespace Scayle\StorefrontApi\Models;
  * @property AppliedReduction[] $appliedReductions 
  * @property string $currencyCode The currency of the price.
  * @property array $reference 
- * @property array $tax 
+ * @property Tax $tax 
  * @property int $withoutTax 
  * @property int $withTax 
  * @property int $recommendedRetailPrice 

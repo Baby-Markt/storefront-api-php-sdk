@@ -7,12 +7,14 @@ namespace Scayle\StorefrontApi\Models;
  * @property array<string, AdvancedAttribute> $advancedAttributes 
  * @property string $appliedPricePromotionKey 
  * @property array<string, Attribute> $attributes 
+ * @property LowestPriorPrice $lowestPriorPrice 
  * @property Price $price 
  * @property int $productId 
  * @property string $referenceKey 
- * @property string $firstLiveAt Identifies the first time the variant went live
+ * @property Timestamp $firstLiveAt 
  * @property Stock $stock 
  * @property array<string, CustomData> $customData 
+ * @property Merchant $merchant 
  * @property Timestamp $createdAt 
  * @property Timestamp $updatedAt 
  */

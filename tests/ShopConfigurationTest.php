@@ -6,11 +6,11 @@ use Scayle\StorefrontApi\Models\Identifier;
 
 class ShopConfigurationTest extends BaseApiTestCase
 {
-    public function testSuggestions()
+    public function testGet()
     {
-        $responseEntity = $this->api->shopConfigurations->Suggestions('1',  []);
+        $responseEntity = $this->api->shopConfigurations->Get('1',  []);
 
-        $expectedResponseJson = $this->loadFixture('ShopConfigurationSuggestionsResponse.json');
+        $expectedResponseJson = $this->loadFixture('ShopConfigurationGetResponse.json');
         $this->assertInstanceOf(\Scayle\StorefrontApi\Models\ShopConfiguration::class, $responseEntity);
         $this->assertJsonStringEqualsJsonString(json_encode($expectedResponseJson), $responseEntity->toJson());
 

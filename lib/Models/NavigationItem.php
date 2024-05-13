@@ -11,8 +11,9 @@ namespace Scayle\StorefrontApi\Models;
  * @property string $visibleTo 
  * @property array $options 
  * @property NavigationItemExtraFilter $extraFilters 
- * @property array<string, Category> $category 
+ * @property Category $category 
  * @property NavigationItem[] $children 
+ * @property array $customData 
  */
 class NavigationItem extends ApiObject
 {

@@ -3,11 +3,6 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property float $floatData 
- * @property array[] $localizedJson 
- * @property array[] $localizedString 
- * @property string $nonLocalizedJson 
- * @property string $nonLocalizedString 
  */
 class BrandCustomData extends ApiObject
 {

@@ -3,11 +3,11 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property array $deliveryForecast 
- * @property bool $isSellableWithoutStock 
- * @property int $quantity 
- * @property int $warehouseId 
  * @property int $supplierId 
+ * @property int $warehouseId 
+ * @property int $quantity 
+ * @property bool $isSellableWithoutStock 
+ * @property string $expectedAvailabilityAt 
  */
 class Stock extends ApiObject
 {
@@ -16,8 +16,6 @@ class Stock extends ApiObject
     ];
 
     protected $classMap = [
-		'customData' => \Scayle\StorefrontApi\Models\CustomData::class,
-		'deliveryForecast' => \Scayle\StorefrontApi\Models\DeliveryForecast::class,
     ];
 
     protected $collectionClassMap = [

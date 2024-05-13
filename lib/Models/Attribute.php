@@ -5,10 +5,10 @@ namespace Scayle\StorefrontApi\Models;
 /**
  * @property int $id 
  * @property string $key Reference that identifies the attribute
- * @property string $label The locale is defined by the configuration of the shop associated with the authentication token. [Translations](../../../en/next/manual/scayle/product-translations) of the individual attributes are maintained in the SCAYLE Panel.
+ * @property string $label The label that describes the attribute group will be set according to the shop's language in the SCAYLE Panel.
  * @property bool $multiSelect A flag which determines whether an attribute has a single or possibly multiple values.
  * @property string $type Attribute type
- * @property AttributeValue[] $values If 'multiSelect' is 'true', this is an 'object' ('{ id? number, label? string, value? string }'), if 'multiSelect' is 'false' this is an array of objects.
+ * @property AttributeValue[] $values The values are a collection of attributes from the attribute group.
  */
 class Attribute extends ApiObject
 {

@@ -3,10 +3,11 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property string $key 
+ * @property string $key A unique key identifying the basket.
  * @property BasketItem[] $items 
  * @property Price $cost 
  * @property Package[] $packages 
+ * @property ApplicablePromotion[] $applicablePromotions 
  */
 class Basket extends ApiObject
 {
@@ -15,12 +16,9 @@ class Basket extends ApiObject
     ];
 
     protected $classMap = [
-		'cost' => \Scayle\StorefrontApi\Models\Price::class,
     ];
 
     protected $collectionClassMap = [
-        'items' => \Scayle\StorefrontApi\Models\BasketItem::class,
-        'packages' => \Scayle\StorefrontApi\Models\Package::class,
     ];
 
     protected $collection2dClassMap = [

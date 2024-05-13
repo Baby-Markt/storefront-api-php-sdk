@@ -9,9 +9,9 @@ namespace Scayle\StorefrontApi\Models;
  * @property string $status 
  * @property Product $product 
  * @property Variant $variant 
- * @property string $productId 
+ * @property int $productId 
  * @property string $masterKey 
- * @property string $variantId 
+ * @property int $variantId 
  * @property array<string, CustomData> $customData 
  */
 class WishlistItem extends ApiObject

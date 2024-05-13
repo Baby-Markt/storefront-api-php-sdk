@@ -4,7 +4,7 @@ namespace Scayle\StorefrontApi\Models;
 
 /**
  * @property int $id 
- * @property string $carrierKey 
+ * @property string $carrierKey The carrier key which will deliver the package
  * @property DeliveryDate $deliveryDate 
  */
 class Package extends ApiObject
@@ -14,7 +14,6 @@ class Package extends ApiObject
     ];
 
     protected $classMap = [
-		'deliveryDate' => \Scayle\StorefrontApi\Models\DeliveryDate::class,
     ];
 
     protected $collectionClassMap = [

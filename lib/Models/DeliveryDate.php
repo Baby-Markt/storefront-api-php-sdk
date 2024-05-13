@@ -3,8 +3,8 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property string $max 
  * @property string $min 
+ * @property string $max 
  */
 class DeliveryDate extends ApiObject
 {
