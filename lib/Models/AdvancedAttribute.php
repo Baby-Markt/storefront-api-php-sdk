@@ -7,7 +7,7 @@ namespace Scayle\StorefrontApi\Models;
  * @property string $key 
  * @property string $label 
  * @property string $type 
- * @property array $values 
+ * @property AdvancedAttributeGroupSet[] $values 
  */
 class AdvancedAttribute extends ApiObject
 {

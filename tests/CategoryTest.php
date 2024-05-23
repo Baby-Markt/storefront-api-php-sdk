@@ -16,14 +16,12 @@ class CategoryTest extends BaseApiTestCase
 
             $this->assertPropertyHasTheCorrectType($responseEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($responseEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
 
         foreach ($responseEntity->getEntities() as $collectionEntity) {
             $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Category::class, $collectionEntity);
             $this->assertPropertyHasTheCorrectType($collectionEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($collectionEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($collectionEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
         }
     }
@@ -38,14 +36,12 @@ class CategoryTest extends BaseApiTestCase
 
             $this->assertPropertyHasTheCorrectType($responseEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($responseEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
 
         foreach ($responseEntity->getEntities() as $collectionEntity) {
             $this->assertInstanceOf(\Scayle\StorefrontApi\Models\Category::class, $collectionEntity);
             $this->assertPropertyHasTheCorrectType($collectionEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($collectionEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($collectionEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
         }
     }
@@ -60,7 +56,6 @@ class CategoryTest extends BaseApiTestCase
 
             $this->assertPropertyHasTheCorrectType($responseEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($responseEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
 
 
@@ -76,7 +71,6 @@ class CategoryTest extends BaseApiTestCase
 
             $this->assertPropertyHasTheCorrectType($responseEntity, 'parent', \Scayle\StorefrontApi\Models\Category::class);
             $this->assertPropertyHasTheCorrectType($responseEntity, 'children', \Scayle\StorefrontApi\Models\Category::class);
-            $this->assertPropertyHasTheCorrectType($responseEntity, 'properties', \Scayle\StorefrontApi\Models\CategoryProperty::class);
 
 
 

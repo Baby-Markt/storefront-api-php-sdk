@@ -3,8 +3,8 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property TypeaheadSuggestion[] $suggestions 
- * @property TypeaheadSuggestion $topMatch 
+ * @property BrandOrCategorySuggestion|ProductSuggestion $suggestions 
+ * @property BrandOrCategorySuggestion $topMatch 
  */
 class Typeahead extends ApiObject
 {

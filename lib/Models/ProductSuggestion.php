@@ -3,9 +3,8 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
+ * @property string $suggestion 
  * @property Product $product 
- * @property float $score 
- * @property string $type 
  */
 class ProductSuggestion extends ApiObject
 {

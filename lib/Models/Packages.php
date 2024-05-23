@@ -11,7 +11,6 @@ class Packages extends ApiObject
     ];
 
     protected $classMap = [
-		'deliveryDate' => \Scayle\StorefrontApi\Models\DeliveryDate::class,
     ];
 
     protected $collectionClassMap = [

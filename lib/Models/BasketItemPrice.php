@@ -13,8 +13,6 @@ class BasketItemPrice extends ApiObject
     ];
 
     protected $classMap = [
-		'total' => \Scayle\StorefrontApi\Models\Price::class,
-		'unit' => \Scayle\StorefrontApi\Models\Price::class,
     ];
 
     protected $collectionClassMap = [

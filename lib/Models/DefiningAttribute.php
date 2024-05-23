@@ -5,7 +5,6 @@ namespace Scayle\StorefrontApi\Models;
 /**
  * @property int $id 
  * @property string $label 
- * @property string $value 
  */
 class DefiningAttribute extends ApiObject
 {

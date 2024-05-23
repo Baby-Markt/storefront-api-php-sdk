@@ -3,7 +3,7 @@
 namespace Scayle\StorefrontApi\Models;
 
 /**
- * @property array $amount 
+ * @property AppliedReductionAmount $amount 
  * @property string $category 
  * @property string $type 
  */

@@ -22,7 +22,6 @@ class ProductCategory extends ApiObject
     ];
 
     protected $collectionClassMap = [
-        'categoryProperties' => \Scayle\StorefrontApi\Models\CategoryProperty::class,
     ];
 
     protected $collection2dClassMap = [

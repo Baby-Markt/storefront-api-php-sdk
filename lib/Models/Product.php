@@ -7,16 +7,15 @@ namespace Scayle\StorefrontApi\Models;
  * @property array<string, AdvancedAttribute> $advancedAttributes 
  * @property array<string, Attribute> $attributes 
  * @property BaseCategory[] $baseCategories 
- * @property ProductCategory[] $categories 
+ * @property ProductCategory[][] $categories 
  * @property DefiningAttribute $definingAttributes 
  * @property Image[] $images 
- * @property array<string, CustomData> $customData 
+ * @property ResponseCustomData $customData 
  * @property bool $isActive Identifies whether a product is active or not
  * @property bool $isNew Identifies whether a product is new or not
  * @property bool $isSoldOut Identifies if a product is still available to sell
  * @property string $masterKey Identifies the master product which this product belongs
- * @property string $firstLiveAt Identifies the first time one of the products variants went live
- * @property array $pricePromotionInfo 
+ * @property Timestamp $firstLiveAt 
  * @property PriceRange $priceRange 
  * @property ReductionRange $reductionRange 
  * @property LowestPriorPrice $lowestPriorPrice 

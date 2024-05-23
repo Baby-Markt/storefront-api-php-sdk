@@ -19,7 +19,7 @@ class ShopConfigurationService extends AbstractService
      * @throws ClientExceptionInterface
      * @throws ApiErrorException
 	 */
-	 public function suggestions($locale, $options = [])
+	 public function get($locale, $options = [])
 	 {
          $combinedOptions = $options;
          $combinedOptions["locale"] = $locale;
