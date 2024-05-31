@@ -1,7 +1,7 @@
 ![scayle-logo-cr](https://cdn-prod.scayle.com/public/media/general/SCAYLE-Commerce-Engine-header.png)
 
 <h1 align="center">
-  SCAYLE Storefront API Java SDK
+  SCAYLE Storefront API PHP SDK
 </h1>
 
 <h4 align="center">
@@ -10,7 +10,7 @@
 </h4>
 
 <p align="center">
-  The SCAYLE <strong>Storefront API Java SDK</strong> streamlines interactions with Storefront REST APIs.
+  The SCAYLE <strong>Storefront API PHP SDK</strong> streamlines interactions with Storefront REST APIs.
 </p>
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="SCAYLE's **Storefront API PHP SDK is released under the MIT license." /></a>
@@ -53,7 +53,7 @@ The community and core teams are available in [GitHub](https://github.com/scayle
 
 ## Other channels
 
-- [GitHub Issues](https://github.com/scayle/storefront-api-java-sdk/issues)
+- [GitHub Issues](https://github.com/scayle/storefront-api-php-sdk/issues)
 - [LinkedIn](https://www.linkedin.com/company/scaylecommerce/)
 - [Jobs](https://careers.smartrecruiters.com/ABOUTYOUGmbH/scayle)
 - [AboutYou Tech Blog](https://aboutyou.tech/)
